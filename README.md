@@ -1,6 +1,4 @@
-# Jogo da Forca - AP2
-
-## Curso: Sistemas de Informação, 2º Semestre
+# Jogo da Forca 
 
 ### Descrição do Jogo
 
