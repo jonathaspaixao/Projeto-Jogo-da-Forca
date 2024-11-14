@@ -1,45 +1,83 @@
-# Projeto-Jogo-da-Forca
+# Jogo da Forca - AP2
 
-# Documentação do Projeto
+## Curso: Sistemas de Informação, 2º Semestre
 
-#Jogo da Forca
+### Descrição do Jogo
 
-#Descrição do Jogo
+O **Jogo da Forca** é um clássico jogo de adivinhação de palavras, onde o jogador tenta descobrir uma palavra secreta, adivinhando letras uma a uma. O jogo possui um limite de 6 tentativas. A cada erro, o jogador perde uma tentativa. Se o jogador acertar todas as letras antes de esgotar as tentativas, vence; caso contrário, perde.
 
-O Jogo da Forca é um jogo clássico de adivinhação de palavras, onde o jogador tenta descobrir uma palavra secreta, adivinhando letras uma a uma. Com um limite de 6 tentativas, a cada erro, o jogador perde uma tentativa. Se acertar todas as letras antes de esgotar as tentativas, vence; caso contrário, perde. Este jogo usa conceitos de POO como classes, herança e encapsulamento.	
+Este projeto utiliza conceitos de Programação Orientada a Objetos (POO), como classes, herança e encapsulamento.
 
-#Explicação Técnica
+### Diagrama de Classes
 
-     Classes e Atributos
+(O diagrama de classes pode ser inserido aqui como uma imagem ou descrição, caso você tenha um)
 
-Jogo: Classe genérica que representa um jogo e possui atributos básicos como    nome e _estado_jogo. Inclui métodos para iniciar e finalizar o jogo.
-JogoForca: Especialização de Jogo, possui atributos adicionais como palavras, _palavra_secreta, _tentativas, _letras_corretas, e _letras_erradas. É responsável pela lógica específica do jogo da Forca.
+### Explicação Técnica
 
-     Métodos 
+#### Classes e Atributos
 
-iniciar_jogo(): Método que inicializa o jogo.
-finalizar_jogo(): Método que finaliza o jogo.
-get_tentativas() e set_tentativas(): Getters e setters para acessar e modificar o número de tentativas restantes.
-     	
-	
-#Instruções de Uso
+- **Jogo**: Classe genérica que representa um jogo e possui atributos básicos, como `nome` e `_estado_jogo`. Inclui métodos para iniciar e finalizar o jogo.
+  
+- **JogoForca**: Especialização de `Jogo`, que possui atributos adicionais, como:
+  - `palavras`
+  - `_palavra_secreta`
+  - `_tentativas`
+  - `_letras_corretas`
+  - `_letras_erradas`
 
-Python 3.6 ou superior instalado.
-Salve o código em um arquivo chamado jogo_forca.py.
-Execute o jogo no terminal usando o comando: “python jogo_forca.py”.
-Siga as instruções do jogo para adivinhar a palavra.
+  Esta classe é responsável pela lógica específica do jogo da Forca.
 
+#### Métodos
 
-#Testes
+- **iniciar_jogo()**: Método que inicializa o jogo.
+- **finalizar_jogo()**: Método que finaliza o jogo.
+- **get_tentativas() e set_tentativas()**: Métodos getters e setters para acessar e modificar o número de tentativas restantes.
 
-Vitória: O jogador acerta todas as letras da palavra antes de esgotar as tentativas.
-Resultado esperado: Exibição da mensagem de vitória e término do jogo.
+### Instruções de Uso
 
-Derrota: O jogador esgota todas as tentativas sem adivinhar a palavra.
-Resultado esperado: Exibição da mensagem de derrota com a palavra secreta.
+1. **Requisitos**:
+   - Python 3.6 ou superior instalado.
 
-Letra Repetida: O jogador tenta adivinhar uma letra que já foi utilizada.
-Resultado esperado: Exibição de uma mensagem informando que a letra já foi   tentada.
+2. **Passos para executar**:
+   - Salve o código em um arquivo chamado `jogo_forca.py`.
+   - Execute o jogo no terminal com o comando:
 
-Entrada Inválida: O jogador insere um caractere inválido.
-Resultado esperado: Exibição de uma mensagem pedindo uma letra válida.
+     ```bash
+     python jogo_forca.py
+     ```
+
+3. Siga as instruções exibidas no terminal para adivinhar a palavra.
+
+### Testes
+
+#### Vitória
+
+- **Descrição**: O jogador acerta todas as letras da palavra antes de esgotar as tentativas.
+- **Resultado Esperado**: Exibição da mensagem de vitória e término do jogo.
+
+#### Derrota
+
+- **Descrição**: O jogador esgota todas as tentativas sem adivinhar a palavra.
+- **Resultado Esperado**: Exibição da mensagem de derrota, revelando a palavra secreta.
+
+#### Letra Repetida
+
+- **Descrição**: O jogador tenta adivinhar uma letra que já foi utilizada.
+- **Resultado Esperado**: Exibição de uma mensagem informando que a letra já foi tentada.
+
+#### Entrada Inválida
+
+- **Descrição**: O jogador insere um caractere inválido (por exemplo, um número ou mais de uma letra).
+- **Resultado Esperado**: Exibição de uma mensagem pedindo para inserir uma letra válida.
+
+---
+
+### Contribuição
+
+1. Faça um fork deste repositório.
+2. Crie uma branch para sua modificação (`git checkout -b minha-modificacao`).
+3. Commit suas alterações (`git commit -am 'Adiciona nova feature'`).
+4. Envie para o repositório remoto (`git push origin minha-modificacao`).
+5. Abra um Pull Request para revisão.
+
+---
